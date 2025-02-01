@@ -1,6 +1,6 @@
 import { InlineSnippet } from "@/components/form/domain-configuration";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import Button from "@/components/ui/button"; // Changed to default import
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageSquare, Database, TrendingUp, Gamepad, Rocket } from "lucide-react";
 import Link from "next/link";
