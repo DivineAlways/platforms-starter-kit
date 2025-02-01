@@ -1,6 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageSquare, Database, TrendingUp, Gamepad, Rocket } from "lucide-react";
 import Link from "next/link";
+import { MessageSquare, Database, TrendingUp, Gamepad, Rocket } from "lucide-react";
 
 export default function LowPerryCommunityHub() {
   return (
@@ -52,33 +51,27 @@ export default function LowPerryCommunityHub() {
               Why Choose Us?
             </h2>
             <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
-              <Card className="bg-green-900 border-green-700">
-                <CardHeader>
-                  <Rocket className="h-10 w-10 mb-2" />
-                  <CardTitle className="font-mono">Cutting-Edge Tech</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="font-mono">Stay updated with the latest technologies and frameworks in the industry.</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-green-900 border-green-700">
-                <CardHeader>
-                  <Database className="h-10 w-10 mb-2" />
-                  <CardTitle className="font-mono">Hands-On Learning</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="font-mono">Gain practical experience with real-world projects and applications.</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-green-900 border-green-700">
-                <CardHeader>
-                  <MessageSquare className="h-10 w-10 mb-2" />
-                  <CardTitle className="font-mono">Community Support</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="font-mono">Connect with like-minded learners and get help when you need it.</p>
-                </CardContent>
-              </Card>
+              <div className="bg-green-900 border-green-700 p-4 rounded">
+                <div className="flex items-center mb-2">
+                  <Rocket className="h-10 w-10" />
+                  <h3 className="font-mono ml-2">Cutting-Edge Tech</h3>
+                </div>
+                <p className="font-mono">Stay updated with the latest technologies and frameworks in the industry.</p>
+              </div>
+              <div className="bg-green-900 border-green-700 p-4 rounded">
+                <div className="flex items-center mb-2">
+                  <Database className="h-10 w-10" />
+                  <h3 className="font-mono ml-2">Hands-On Learning</h3>
+                </div>
+                <p className="font-mono">Gain practical experience with real-world projects and applications.</p>
+              </div>
+              <div className="bg-green-900 border-green-700 p-4 rounded">
+                <div className="flex items-center mb-2">
+                  <MessageSquare className="h-10 w-10" />
+                  <h3 className="font-mono ml-2">Community Support</h3>
+                </div>
+                <p className="font-mono">Connect with like-minded learners and get help when you need it.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -88,46 +81,34 @@ export default function LowPerryCommunityHub() {
               Our Projects
             </h2>
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
-              <Card className="bg-green-900 border-green-700">
-                <CardHeader>
-                  <MessageSquare className="h-10 w-10 mb-2" />
-                  <CardTitle className="font-mono">AI Chatbot</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="font-mono">Explore the world of conversational AI with our advanced chatbot project.</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-green-900 border-green-700">
-                <CardHeader>
-                  <Database className="h-10 w-10 mb-2" />
-                  <CardTitle className="font-mono">Data Engineering Learning</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="font-mono">Master the art of data engineering with our comprehensive learning path.</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-green-900 border-green-700">
-                <CardHeader>
-                  <TrendingUp className="h-10 w-10 mb-2" />
-                  <CardTitle className="font-mono">Financial App for Crypto/Stocks</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="font-mono">
-                    Track and analyze cryptocurrency and stock markets with our powerful financial tool.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="bg-green-900 border-green-700">
-                <CardHeader>
-                  <Gamepad className="h-10 w-10 mb-2" />
-                  <CardTitle className="font-mono">Game Dashboard</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="font-mono">
-                    Manage and monitor your gaming statistics with our intuitive game dashboard.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-green-900 border-green-700 p-4 rounded">
+                <div className="flex items-center mb-2">
+                  <MessageSquare className="h-10 w-10" />
+                  <h3 className="font-mono ml-2">AI Chatbot</h3>
+                </div>
+                <p className="font-mono">Explore the world of conversational AI with our advanced chatbot project.</p>
+              </div>
+              <div className="bg-green-900 border-green-700 p-4 rounded">
+                <div className="flex items-center mb-2">
+                  <Database className="h-10 w-10" />
+                  <h3 className="font-mono ml-2">Data Engineering Learning</h3>
+                </div>
+                <p className="font-mono">Master the art of data engineering with our comprehensive learning path.</p>
+              </div>
+              <div className="bg-green-900 border-green-700 p-4 rounded">
+                <div className="flex items-center mb-2">
+                  <TrendingUp className="h-10 w-10" />
+                  <h3 className="font-mono ml-2">Financial App for Crypto/Stocks</h3>
+                </div>
+                <p className="font-mono">Track and analyze cryptocurrency and stock markets with our powerful financial tool.</p>
+              </div>
+              <div className="bg-green-900 border-green-700 p-4 rounded">
+                <div className="flex items-center mb-2">
+                  <Gamepad className="h-10 w-10" />
+                  <h3 className="font-mono ml-2">Game Dashboard</h3>
+                </div>
+                <p className="font-mono">Manage and monitor your gaming statistics with our intuitive game dashboard.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -137,21 +118,17 @@ export default function LowPerryCommunityHub() {
               Simple Pricing
             </h2>
             <div className="mx-auto max-w-sm">
-              <Card className="bg-green-900 border-green-700">
-                <CardHeader>
-                  <CardTitle className="font-mono">All-Access Pass</CardTitle>
-                  <CardDescription className="font-mono text-green-400">Get access to all our projects</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="text-4xl font-bold mb-2 font-mono">$29.99/month</div>
-                  <ul className="list-disc list-inside space-y-2 font-mono">
-                    <li>Access to all current projects</li>
-                    <li>New projects as they're released</li>
-                    <li>Community support</li>
-                    <li>Regular updates and improvements</li>
-                  </ul>
-                </CardContent>
-              </Card>
+              <div className="bg-green-900 border-green-700 p-4 rounded">
+                <h3 className="font-mono">All-Access Pass</h3>
+                <p className="font-mono text-green-400">Get access to all our projects</p>
+                <div className="text-4xl font-bold mb-2 font-mono">$29.99/month</div>
+                <ul className="list-disc list-inside space-y-2 font-mono">
+                  <li>Access to all current projects</li>
+                  <li>New projects as they're released</li>
+                  <li>Community support</li>
+                  <li>Regular updates and improvements</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
