@@ -1,4 +1,3 @@
-import Button from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageSquare, Database, TrendingUp, Gamepad, Rocket } from "lucide-react";
 import Link from "next/link";
@@ -37,10 +36,12 @@ export default function LowPerryCommunityHub() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Button className="bg-green-700 text-black hover:bg-green-600">Get Started</Button>
-                <Button variant="outline" className="border-green-700 text-green-400 hover:bg-green-900">
+                <Link href="#get-started" className="bg-green-700 text-black hover:bg-green-600 px-4 py-2 rounded">
+                  Get Started
+                </Link>
+                <Link href="#learn-more" className="border border-green-700 text-green-400 hover:bg-green-900 px-4 py-2 rounded">
                   Learn More
-                </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -165,9 +166,12 @@ export default function LowPerryCommunityHub() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Button size="lg" className="bg-green-700 text-black hover:bg-green-600 font-mono">
-                  Sign Up Now
-                </Button>
+                <Link href="#get-started" className="bg-green-700 text-black hover:bg-green-600 px-4 py-2 rounded">
+                  Get Started
+                </Link>
+                <Link href="#learn-more" className="border border-green-700 text-green-400 hover:bg-green-900 px-4 py-2 rounded">
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>
